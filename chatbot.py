@@ -40,7 +40,7 @@ with st.container():
         """,
         unsafe_allow_html=True
     )
-    st.image("compnovai_logo.PNG",use_column_width = True)
+    st.image("compnovai_logo.PNG",use_column_width = True, width=1200)
     
 togg_switch = st.toggle('Synthetic data',True,key='data_source')
 
