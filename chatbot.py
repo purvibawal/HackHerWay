@@ -27,10 +27,10 @@ def get_model_response(oem_code_str,dealer_str,distr_str,fc_str, engine_name_des
 
 
 
-
 # Streamlit UI components
-
-st.image("compnovai_logo.PNG", width=1800)
+with st.container():
+    st.image("compnovai_logo.PNG")
+    
 togg_switch = st.toggle('Synthetic data',True,key='data_source')
 
 def select_claimid():
