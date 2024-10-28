@@ -29,9 +29,18 @@ def get_model_response(oem_code_str,dealer_str,distr_str,fc_str, engine_name_des
 
 # Streamlit UI components
 with st.container():
-    col1 = st.columns(1)
-    with col1:
-        st.image("compnovai_logo.PNG",use_column_width = True)
+    st.markdown(
+        """
+        <style>
+        .stContainer > div {
+            width: 95%;
+            margin: auto;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+    st.image("compnovai_logo.PNG",use_column_width = True)
     
 togg_switch = st.toggle('Synthetic data',True,key='data_source')
 
