@@ -8,8 +8,8 @@ import json
 
 st.set_page_config(layout="wide")
 
-file_predictions_synth = "C:/Users/qv942/DBX_Hack/synth_bert_model_test_result.csv"
-file_predictions = "C:/Users/qv942/DBX_Hack/synth_bert_model_test_result.csv"
+file_predictions_synth = "synth_bert_model_test_result.csv"
+file_predictions = "synth_bert_model_test_result.csv"
 
 pdf = pd.read_csv(file_predictions)
 pdf_s = pd.read_csv(file_predictions_synth)
