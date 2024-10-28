@@ -6,7 +6,7 @@ import json
 # from streamlit_extras.app_logo import add_logo
 
 
-st.set_page_config(layout="wide")
+# st.set_page_config(layout="wide")
 
 file_predictions_synth = "synth_bert_model_test_result.csv"
 file_predictions = "synth_bert_model_test_result.csv"
