@@ -29,7 +29,9 @@ def get_model_response(oem_code_str,dealer_str,distr_str,fc_str, engine_name_des
 
 # Streamlit UI components
 with st.container():
-    st.image("compnovai_logo.PNG")
+    col1 = st.columns(1)
+    with col1:
+        st.image("compnovai_logo.PNG")
     
 togg_switch = st.toggle('Synthetic data',True,key='data_source')
 
